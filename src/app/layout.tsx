@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import Link from "next/link"; // ✅ import Link
 
 export const metadata: Metadata = {
   title: "Aftab Hussain",
@@ -10,10 +11,10 @@ function Header() {
   return (
     <header className="sticky top-0 bg-white/80 backdrop-blur z-50 border-b">
       <nav className="mx-auto max-w-2xl px-4 py-3 flex gap-5 text-sm">
-        <a href="/" className="font-medium">Home</a>
-        <a href="/about">About</a>
-        <a href="/work">Work</a>
-        <a href="/gallery">Gallery</a>
+        <Link href="/" className="font-medium">Home</Link>
+        <Link href="/about">About</Link>
+        <Link href="/work">Work</Link>
+        <Link href="/gallery">Gallery</Link>
       </nav>
     </header>
   );
