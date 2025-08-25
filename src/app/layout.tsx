@@ -1,9 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import Link from "next/link"; // ✅ import Link
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Aftab Hussain",
+  title: "Sana Ambreen",
   description: "Data Scientist • Dallas, TX",
 };
 
@@ -23,7 +23,7 @@ function Header() {
 function Footer() {
   return (
     <footer className="mx-auto max-w-2xl px-4 py-12 text-xs text-zinc-500">
-      © {new Date().getFullYear()} Aftab Hussain
+      © {new Date().getFullYear()} Sana Ambreen
     </footer>
   );
 }
