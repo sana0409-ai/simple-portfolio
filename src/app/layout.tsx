@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 
 function Header() {
   return (
-    <header className="sticky top-0 bg-white/80 backdrop-blur z-50 border-b">
-      <nav className="mx-auto max-w-2xl px-4 py-3 flex gap-5 text-sm">
-        <Link href="/" className="font-medium">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/work">Work</Link>
-        <Link href="/gallery">Gallery</Link>
+    <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white/70 backdrop-blur">
+      <nav className="mx-auto max-w-5xl px-4 py-3 flex gap-6 text-sm text-zinc-700">
+        <Link href="/" className="font-medium hover:text-black">Home</Link>
+        <Link href="/resume" className="hover:text-black">Resume</Link>
+        <Link href="/work" className="hover:text-black">Work</Link>
+        <Link href="/gallery" className="hover:text-black">Gallery</Link>
       </nav>
     </header>
   );
@@ -22,7 +22,7 @@ function Header() {
 
 function Footer() {
   return (
-    <footer className="mx-auto max-w-2xl px-4 py-12 text-xs text-zinc-500">
+    <footer className="mx-auto max-w-5xl px-4 py-12 text-xs text-zinc-600">
       © {new Date().getFullYear()} Sana Ambreen
     </footer>
   );
@@ -31,9 +31,11 @@ function Footer() {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className="min-h-screen bg-gradient-to-br from-indigo-200 via-purple-300 to-pink-300 text-zinc-900">
         <Header />
-        <main className="mx-auto max-w-2xl px-4 py-12">{children}</main>
+        <main className="mx-auto max-w-5xl px-4 py-12">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
