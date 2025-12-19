@@ -69,63 +69,46 @@ export default function WorkPage() {
           </div>
         </div>
 
-        {/* --- Stock Sentiment Analysis (match size, 2 images side-by-side) --- */}
+        {/* --- TripSage AI Travel Assistant --- */}
         <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 rounded-xl bg-white/40 backdrop-blur p-6 shadow">
-          {/* Left: two images inside the SAME sized box as above */}
+          {/* Left: single image */}
           <div className="md:col-span-1">
             <div className="relative w-full h-48 md:h-[300px] overflow-hidden rounded-lg">
-              {/* split the box into 2 equal halves */}
-              <div className="absolute inset-0 grid grid-cols-2 gap-3 p-0">
-                <div className="relative overflow-hidden rounded-md">
-                  <Image
-                    src="/gallery/stock1.jpg"
-                    alt="Stock Sentiment Analysis screenshot 1"
-                    fill
-                    className="object-cover"
-                    sizes="(min-width:768px) 160px, 45vw"
-                    priority
-                  />
-                </div>
-                <div className="relative overflow-hidden rounded-md">
-                  <Image
-                    src="/gallery/stock2.jpeg"
-                    alt="Stock Sentiment Analysis screenshot 2"
-                    fill
-                    className="object-cover"
-                    sizes="(min-width:768px) 160px, 45vw"
-                  />
-                </div>
-              </div>
+              <Image
+                src="/projects/tripsage.png"
+                alt="TripSage AI Travel Assistant preview"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
 
           {/* Right: text */}
           <div className="md:col-span-2 flex flex-col">
-            <h3 className="text-lg font-semibold">Stock Sentiment Analysis</h3>
+            <h3 className="text-lg font-semibold">TripSage AI Travel Assistant</h3>
 
             <p className="mt-2 text-sm text-zinc-800">
-              LSTM-based stock sentiment analysis model that combines Unusual Whales sweeps with
-              multi-source sentiment data (Alpha Vantage, Polygon IO, TWS News + FinBERT), aligned
-              with OHLCV features, to predict 4-hour future returns and classify bullish vs bearish
-              signals.
+              AI-powered travel planning assistant built with Google Dialogflow CX and React. 
+              Enables users to book flights, hotels, and rental cars through natural language 
+              conversations with real-time API integrations for live pricing and availability.
             </p>
 
             <p className="mt-2 text-sm text-zinc-800">
-              This project explores how financial sentiment and price action can be combined to
-              predict short-term stock movements. Using an LSTM neural network, the model processes
-              time-series data that fuses options flow, sentiment scores, and OHLCV market data to
-              classify whether a stock is likely to move bullish or bearish in the next 4 hours.
-              <span className="whitespace-nowrap"> NLP &amp; Sentiment Analysis.</span>
+              Features include intelligent trip itinerary generation, step-by-step booking flows, 
+              and a beautiful chat interface with rich media cards. Integrates with Amadeus, 
+              Booking.com, and Priceline APIs for comprehensive travel options.
+              <span className="whitespace-nowrap"> Conversational AI &amp; Full-Stack Development.</span>
             </p>
 
             <div className="mt-4">
               <a
-                href="https://stock-sentiment-analysis-phi.vercel.app"
+                href="https://trip-sage-re4sy11mq-sanas-projects-297ee677.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow transition hover:bg-indigo-700"
               >
-                Model Code
+                Open Live App
               </a>
             </div>
           </div>
