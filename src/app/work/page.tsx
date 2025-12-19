@@ -1,4 +1,3 @@
-// src/app/work/page.tsx
 import Image from "next/image";
 
 export default function WorkPage() {
@@ -32,9 +31,8 @@ export default function WorkPage() {
       <section className="mt-10">
         <h2 className="text-2xl font-semibold">Featured Project</h2>
 
-        {/* --- Multimodal Depression Analysis (reference layout) --- */}
+        {/* --- Multimodal Depression Analysis (UNCHANGED) --- */}
         <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6 rounded-xl bg-white/40 backdrop-blur p-6 shadow">
-          {/* Left: single image in a fixed-height box */}
           <div className="md:col-span-1">
             <div className="relative w-full h-48 md:h-[300px] overflow-hidden rounded-lg">
               <Image
@@ -47,7 +45,6 @@ export default function WorkPage() {
             </div>
           </div>
 
-          {/* Right: text */}
           <div className="md:col-span-2 flex flex-col">
             <h3 className="text-lg font-semibold">Multimodal Depression Analysis</h3>
             <p className="mt-2 text-sm text-zinc-800">
@@ -69,41 +66,43 @@ export default function WorkPage() {
           </div>
         </div>
 
-        {/* --- TripSage AI Travel Assistant --- */}
+        {/* --- TripSage AI Travel Assistant (FIXED JPG) --- */}
         <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 rounded-xl bg-white/40 backdrop-blur p-6 shadow">
-          {/* Left: single image */}
           <div className="md:col-span-1">
             <div className="relative w-full h-48 md:h-[300px] overflow-hidden rounded-lg">
               <Image
-                src="/projects/tripsage.png"
+                src="/projects/trip sage.jpg"
                 alt="TripSage AI Travel Assistant preview"
                 fill
+                sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover"
                 priority
               />
             </div>
           </div>
 
-          {/* Right: text */}
           <div className="md:col-span-2 flex flex-col">
             <h3 className="text-lg font-semibold">TripSage AI Travel Assistant</h3>
 
             <p className="mt-2 text-sm text-zinc-800">
-              AI-powered travel planning assistant built with Google Dialogflow CX and React. 
-              Enables users to book flights, hotels, and rental cars through natural language 
+              AI-powered travel planning assistant built with Google Dialogflow CX and React.
+              Enables users to book flights, hotels, and rental cars through natural language
               conversations with real-time API integrations for live pricing and availability.
             </p>
 
             <p className="mt-2 text-sm text-zinc-800">
-              Features include intelligent trip itinerary generation, step-by-step booking flows, 
-              and a beautiful chat interface with rich media cards. Integrates with Amadeus, 
+              Features include intelligent trip itinerary generation, step-by-step booking flows,
+              and a beautiful chat interface with rich media cards. Integrates with Amadeus,
               Booking.com, and Priceline APIs for comprehensive travel options.
-              <span className="whitespace-nowrap"> Conversational AI &amp; Full-Stack Development.</span>
+              <span className="whitespace-nowrap">
+                {" "}
+                Conversational AI &amp; Full-Stack Development.
+              </span>
             </p>
 
             <div className="mt-4">
               <a
-                href="https://trip-sage-re4sy11mq-sanas-projects-297ee677.vercel.app"
+                href="https://trip-sage-black.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow transition hover:bg-indigo-700"
