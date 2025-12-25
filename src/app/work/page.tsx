@@ -19,7 +19,7 @@ export default function WorkPage() {
 
         <p className="mt-4 text-sm leading-6 text-zinc-800">
           Contributed to applied research in AI/ML for quantitative finance. Designed and shipped
-          end-to-end ML pipelines in <strong>Python</strong> using <strong>XGBoost</strong>,{" "}
+          end-to-end ML pipelines in Python using XGBoost,{" "}
           <strong>LSTM</strong>, and <strong>PyTorch</strong>; operationalized models with{" "}
           <strong>MLflow</strong>, <strong>GitHub Actions</strong>, <strong>Docker</strong>, and{" "}
           <strong>AWS</strong>. Worked with real-time APIs (IBKR, Unusual Whales), applied
@@ -66,16 +66,16 @@ export default function WorkPage() {
           </div>
         </div>
 
-        {/* --- TripSage AI Travel Assistant (FIXED JPG) --- */}
+        {/* --- TripSage AI Travel Assistant (FIXED IMAGE FIT) --- */}
         <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 rounded-xl bg-white/40 backdrop-blur p-6 shadow">
           <div className="md:col-span-1">
-            <div className="relative w-full h-48 md:h-[300px] overflow-hidden rounded-lg">
+            <div className="relative w-full h-48 md:h-[300px] overflow-hidden rounded-lg bg-white flex items-center justify-center">
               <Image
                 src="/projects/trip sage.jpg"
                 alt="TripSage AI Travel Assistant preview"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
-                className="object-cover"
+                className="object-contain"
                 priority
               />
             </div>
