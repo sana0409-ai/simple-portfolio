@@ -112,6 +112,69 @@ export default function WorkPage() {
             </div>
           </div>
         </div>
+
+        {/* --- ERCOT Real-Time Load Forecasting (NEW) --- */}
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 rounded-xl bg-white/40 backdrop-blur p-6 shadow">
+          <div className="md:col-span-1">
+            <div className="relative w-full h-48 md:h-[300px] overflow-hidden rounded-lg bg-white flex items-center justify-center">
+              <Image
+                src="/ercot_image.png"
+                alt="ERCOT load forecasting preview"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-contain"
+                priority
+              />
+            </div>
+          </div>
+
+          <div className="md:col-span-2 flex flex-col">
+            <h3 className="text-lg font-semibold">ERCOT Real-Time Energy Load Forecasting System</h3>
+
+            <p className="mt-2 text-sm text-zinc-800">
+              Built an end-to-end real-time electricity load forecasting system for the Texas power
+              grid (ERCOT). Evaluated multiple RNN architectures (RNN, LSTM, BiLSTM, GRU) to predict
+              next-2-hour demand and deployed the best-performing model via a FastAPI backend.
+              Integrated live ERCOT grid data through APIs and visualized real-time forecasts,
+              accuracy (MAPE), and load trends using an auto-refreshing Tableau dashboard.
+            </p>
+
+            <div className="mt-4 flex flex-wrap gap-3">
+              <a
+                href="https://github.com/sana0409-ai/Ercot-load-forecast"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow transition hover:bg-indigo-700"
+              >
+                GitHub Code
+              </a>
+
+              <a
+                href="https://public.tableau.com/app/profile/sana.ambreen/viz/Ercotenergydashboard/Dashboard1?publish=yes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow transition hover:bg-indigo-700"
+              >
+                Tableau Dashboard
+              </a>
+
+              <a
+                href="/ercot_load_forecasting_research.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow transition hover:bg-indigo-700"
+              >
+                Research Proposal (PDF)
+              </a>
+            </div>
+
+            <p className="mt-3 text-xs text-zinc-600">
+              Note: Make sure <span className="font-medium">ercot_image.png</span> and{" "}
+              <span className="font-medium">ercot_load_forecasting_research.pdf</span> are inside the{" "}
+              <span className="font-medium">/public</span> folder.
+            </p>
+          </div>
+        </div>
       </section>
     </section>
   );
