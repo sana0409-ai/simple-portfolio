@@ -168,14 +168,6 @@ export default function WorkPage() {
               </a>
             </div>
 
-            <p className="mt-3 text-xs text-zinc-600">
-              Note: Make sure <span className="font-medium">ercot_image.png</span> and{" "}
-              <span className="font-medium">ercot_load_forecasting_research.pdf</span> are inside the{" "}
-              <span className="font-medium">/public</span> folder.
-            </p>
-          </div>
-        </div>
-      </section>
-    </section>
+            
   );
 }
