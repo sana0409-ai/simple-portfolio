@@ -168,6 +168,9 @@ export default function WorkPage() {
               </a>
             </div>
 
-            
-  
-
+          </div>
+        </div>
+      </section>
+    </section>
+  );
+}
