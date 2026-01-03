@@ -31,7 +31,7 @@ export default function WorkPage() {
       <section className="mt-10">
         <h2 className="text-2xl font-semibold">Featured Project</h2>
 
-        {/* --- Multimodal Depression Analysis (UNCHANGED) --- */}
+        {/* --- Multimodal Depression Analysis (UPDATED DESCRIPTION) --- */}
         <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6 rounded-xl bg-white/40 backdrop-blur p-6 shadow">
           <div className="md:col-span-1">
             <div className="relative w-full h-48 md:h-[300px] overflow-hidden rounded-lg">
@@ -48,9 +48,13 @@ export default function WorkPage() {
           <div className="md:col-span-2 flex flex-col">
             <h3 className="text-lg font-semibold">Multimodal Depression Analysis</h3>
             <p className="mt-2 text-sm text-zinc-800">
-              Lightweight web app that screens depression signals using text/audio cues and simple
-              heuristics. Includes a clean UI, real-time inputs, and a fast API backend. Deployed on
-              Vercel and optimized for smooth UX.
+              Built an end-to-end, real-time multimodal depression screening system that analyzes{" "}
+              <strong>speech, facial expressions, and language</strong> from short user responses.
+              The system captures live audio and video through webcam and microphone, extracts
+              acoustic features (eGeMAPS), speech formants, facial landmarks, and contextual text
+              embeddings (BERT), and combines them into a unified feature vector. A trained PyTorch
+              neural network predicts the probability of depression and delivers results instantly
+              through a deployed web application.
             </p>
 
             <div className="mt-4">
@@ -167,7 +171,64 @@ export default function WorkPage() {
                 Research Proposal (PDF)
               </a>
             </div>
+          </div>
+        </div>
 
+        {/* --- COVID-19 Policy Impact on U.S. Housing Markets (NEW) --- */}
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 rounded-xl bg-white/40 backdrop-blur p-6 shadow">
+          <div className="md:col-span-1">
+            <div className="relative w-full h-48 md:h-[300px] overflow-hidden rounded-lg bg-white flex items-center justify-center">
+              <Image
+                src="/covid19_image.png.jpg"
+                alt="COVID-19 Housing Markets dashboard preview"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-contain"
+                priority
+              />
+            </div>
+          </div>
+
+          <div className="md:col-span-2 flex flex-col">
+            <h3 className="text-lg font-semibold">COVID-19 Policy Impact on U.S. Housing Markets</h3>
+
+            <p className="mt-2 text-sm text-zinc-800">
+              Built an end-to-end data analytics project analyzing how COVID-19 government
+              stringency measures influenced U.S. housing price growth from 2020–2023. Integrated
+              state-level housing prices with unemployment, GDP growth, mortgage interest rates, and
+              COVID severity to uncover how policy restrictions, economic conditions, and migration
+              patterns reshaped housing markets. Delivered insights through an interactive Tableau
+              dashboard and Python-based regression analysis.
+            </p>
+
+            <div className="mt-4 flex flex-wrap gap-3">
+              <a
+                href="https://github.com/sana0409-ai/Covid-19-housing-analysis/tree/main"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow transition hover:bg-indigo-700"
+              >
+                GitHub Code
+              </a>
+
+              <a
+                href="https://public.tableau.com/app/profile/sana.ambreen/viz/Coviddashboard_17673930866780/Dashboard1?publish=yes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow transition hover:bg-indigo-700"
+              >
+                Tableau Dashboard
+              </a>
+
+              <a
+                href="/Covid 19 Research Paper.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow transition hover:bg-indigo-700"
+              >
+                Research Paper (PDF)
+              </a>
+            </div>
           </div>
         </div>
       </section>
