@@ -78,9 +78,10 @@ export default function WorkPage() {
                 src="/projects/fraud_image.png"
                 alt="Fraud Real-Time Monitoring Dashboard preview"
                 fill
-                sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-contain"
-                priority
+                unoptimized
+
+
               />
             </div>
           </div>
