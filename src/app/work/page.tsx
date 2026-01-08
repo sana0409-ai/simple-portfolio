@@ -31,7 +31,7 @@ export default function WorkPage() {
       <section className="mt-10">
         <h2 className="text-2xl font-semibold">Featured Project</h2>
 
-        {/* --- Multimodal Depression Analysis (UPDATED DESCRIPTION) --- */}
+        {/* --- Multimodal Depression Analysis --- */}
         <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6 rounded-xl bg-white/40 backdrop-blur p-6 shadow">
           <div className="md:col-span-1">
             <div className="relative w-full h-48 md:h-[300px] overflow-hidden rounded-lg">
@@ -47,6 +47,7 @@ export default function WorkPage() {
 
           <div className="md:col-span-2 flex flex-col">
             <h3 className="text-lg font-semibold">Multimodal Depression Analysis</h3>
+
             <p className="mt-2 text-sm text-zinc-800">
               Built an end-to-end, real-time multimodal depression screening system that analyzes{" "}
               <strong>speech, facial expressions, and language</strong> from short user responses.
@@ -59,7 +60,7 @@ export default function WorkPage() {
 
             <div className="mt-4">
               <a
-                href="https://multimodal-depression-analysis.vercel.app/"
+                href="https://multimodal-depression-analysis--sanataj0409.replit.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow transition hover:bg-indigo-700"
@@ -70,7 +71,57 @@ export default function WorkPage() {
           </div>
         </div>
 
-        {/* --- TripSage AI Travel Assistant (FIXED IMAGE FIT) --- */}
+        {/* --- Fraud Real-Time Monitoring Dashboard --- */}
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 rounded-xl bg-white/40 backdrop-blur p-6 shadow">
+          <div className="md:col-span-1">
+            <div className="relative w-full h-48 md:h-[300px] overflow-hidden rounded-lg bg-white flex items-center justify-center">
+              <Image
+                src="/projects/fraud_image.png"
+                alt="Fraud Real-Time Monitoring Dashboard preview"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+          </div>
+
+          <div className="md:col-span-2 flex flex-col">
+            <h3 className="text-lg font-semibold">Fraud Real-Time Monitoring Dashboard</h3>
+
+            <p className="mt-2 text-sm text-zinc-800">
+              A full-stack, real-time fraud monitoring platform designed to help analysts detect,
+              investigate, and explain suspicious transactions with speed and clarity.
+            </p>
+
+            <p className="mt-2 text-sm text-zinc-800">
+              The dashboard provides a live view of transaction activity, fraud severity indicators,
+              and contextual signals, paired with AI-generated explanations powered by
+              Retrieval-Augmented Generation (RAG). By grounding large language model outputs in
+              historical fraud cases, the system delivers explanations that are not only intelligent,
+              but auditable and trustworthy.
+            </p>
+
+            <p className="mt-2 text-sm text-zinc-800">
+              The frontend presents fraud trends, alerts, and case-level insights through an intuitive UI,
+              while the backend runs on a cloud-native FastAPI microservice deployed on Azure Container Apps.
+              Semantic search is handled via Azure Cognitive Search, and reasoning is powered by Azure OpenAI,
+              enabling analysts to move from detection to decision in seconds.
+            </p>
+
+            <div className="mt-4">
+              <a
+                href="https://fraud-monitoring-dashboard--sanataj0409.replit.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow transition hover:bg-indigo-700"
+              >
+                Open Live App
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* --- TripSage AI Travel Assistant --- */}
         <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 rounded-xl bg-white/40 backdrop-blur p-6 shadow">
           <div className="md:col-span-1">
             <div className="relative w-full h-48 md:h-[300px] overflow-hidden rounded-lg bg-white flex items-center justify-center">
@@ -78,7 +129,6 @@ export default function WorkPage() {
                 src="/projects/trip sage.jpg"
                 alt="TripSage AI Travel Assistant preview"
                 fill
-                sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-contain"
                 priority
               />
@@ -98,135 +148,16 @@ export default function WorkPage() {
               Features include intelligent trip itinerary generation, step-by-step booking flows,
               and a beautiful chat interface with rich media cards. Integrates with Amadeus,
               Booking.com, and Priceline APIs for comprehensive travel options.
-              <span className="whitespace-nowrap">
-                {" "}
-                Conversational AI &amp; Full-Stack Development.
-              </span>
             </p>
 
             <div className="mt-4">
               <a
-                href="https://trip-sage-black.vercel.app/"
+                href="https://trip-sage--sanataj0409.replit.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow transition hover:bg-indigo-700"
               >
                 Open Live App
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* --- ERCOT Real-Time Load Forecasting (NEW) --- */}
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 rounded-xl bg-white/40 backdrop-blur p-6 shadow">
-          <div className="md:col-span-1">
-            <div className="relative w-full h-48 md:h-[300px] overflow-hidden rounded-lg bg-white flex items-center justify-center">
-              <Image
-                src="/ercot_image.png"
-                alt="ERCOT load forecasting preview"
-                fill
-                sizes="(max-width: 768px) 100vw, 33vw"
-                className="object-contain"
-                priority
-              />
-            </div>
-          </div>
-
-          <div className="md:col-span-2 flex flex-col">
-            <h3 className="text-lg font-semibold">ERCOT Real-Time Energy Load Forecasting System</h3>
-
-            <p className="mt-2 text-sm text-zinc-800">
-              Built an end-to-end real-time electricity load forecasting system for the Texas power
-              grid (ERCOT). Evaluated multiple RNN architectures (RNN, LSTM, BiLSTM, GRU) to predict
-              next-2-hour demand and deployed the best-performing model via a FastAPI backend.
-              Integrated live ERCOT grid data through APIs and visualized real-time forecasts,
-              accuracy (MAPE), and load trends using an auto-refreshing Tableau dashboard.
-            </p>
-
-            <div className="mt-4 flex flex-wrap gap-3">
-              <a
-                href="https://github.com/sana0409-ai/Ercot-load-forecast"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow transition hover:bg-indigo-700"
-              >
-                GitHub Code
-              </a>
-
-              <a
-                href="https://public.tableau.com/app/profile/sana.ambreen/viz/Ercotenergydashboard/Dashboard1?publish=yes"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow transition hover:bg-indigo-700"
-              >
-                Tableau Dashboard
-              </a>
-
-              <a
-                href="/ercot_load_forecasting_research.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow transition hover:bg-indigo-700"
-              >
-                Research Proposal (PDF)
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* --- COVID-19 Policy Impact on U.S. Housing Markets (NEW) --- */}
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 rounded-xl bg-white/40 backdrop-blur p-6 shadow">
-          <div className="md:col-span-1">
-            <div className="relative w-full h-48 md:h-[300px] overflow-hidden rounded-lg bg-white flex items-center justify-center">
-              <Image
-                src="/covid19_image.png.jpg"
-                alt="COVID-19 Housing Markets dashboard preview"
-                fill
-                sizes="(max-width: 768px) 100vw, 33vw"
-                className="object-contain"
-                priority
-              />
-            </div>
-          </div>
-
-          <div className="md:col-span-2 flex flex-col">
-            <h3 className="text-lg font-semibold">COVID-19 Policy Impact on U.S. Housing Markets</h3>
-
-            <p className="mt-2 text-sm text-zinc-800">
-              Built an end-to-end data analytics project analyzing how COVID-19 government
-              stringency measures influenced U.S. housing price growth from 2020–2023. Integrated
-              state-level housing prices with unemployment, GDP growth, mortgage interest rates, and
-              COVID severity to uncover how policy restrictions, economic conditions, and migration
-              patterns reshaped housing markets. Delivered insights through an interactive Tableau
-              dashboard and Python-based regression analysis.
-            </p>
-
-            <div className="mt-4 flex flex-wrap gap-3">
-              <a
-                href="https://github.com/sana0409-ai/Covid-19-housing-analysis/tree/main"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow transition hover:bg-indigo-700"
-              >
-                GitHub Code
-              </a>
-
-              <a
-                href="https://public.tableau.com/app/profile/sana.ambreen/viz/Coviddashboard_17673930866780/Dashboard1?publish=yes"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow transition hover:bg-indigo-700"
-              >
-                Tableau Dashboard
-              </a>
-
-              <a
-                href="/Covid 19 Research Paper.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow transition hover:bg-indigo-700"
-              >
-                Research Paper (PDF)
               </a>
             </div>
           </div>
