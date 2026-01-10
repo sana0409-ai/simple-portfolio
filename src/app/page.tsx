@@ -18,10 +18,20 @@ export default function Home() {
           </h2>
 
           <p className="text-zinc-700">
-            I’m a Data Analytics professional, specializing in AI/ML. I build end-to-end pipelines and models with
-            Python (pandas, NumPy, scikit-learn), SAS and run them on Cloud. I’m strong on data storytelling,
-            shipping actionable dashboards in Tableau and Power BI and querying large, distributed datasets. I thrive
-            at the intersection of AI, big data, and cloud—turning raw data into decisions and measurable business impact.
+            I’m an <strong>AI/ML Engineer</strong> with <strong>3+ years of experience</strong>,
+            focused on building production-ready <strong>machine learning</strong> and
+            <strong> generative AI</strong> systems. I enjoy turning complex data into
+            scalable APIs, intelligent models, and real-world solutions.
+            <br />
+            <br />
+            My work spans designing end-to-end ML pipelines from data cleaning and feature
+            engineering to model training, deployment, and monitoring. I’ve built
+            <strong> fraud detection systems</strong>, <strong>real-time forecasting pipelines</strong>,
+            <strong> conversational AI assistants</strong>, and <strong>RAG-based applications</strong>,
+            deploying them using <strong>FastAPI</strong>, <strong>Docker</strong>, and
+            cloud platforms. I enjoy building systems that are <strong>explainable</strong>,
+            <strong> reliable</strong>, and actually used by end users. I’m also comfortable
+            translating technical work into clear insights and dashboards for stakeholders.
           </p>
 
           <div>

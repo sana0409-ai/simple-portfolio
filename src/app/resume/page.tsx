@@ -23,7 +23,7 @@ export default function ResumePage() {
       </div>
 
       <a
-        href="/resume.pdf"
+        href="/Sana_cv.pdf"
         download
         className="inline-block rounded-lg border px-4 py-2 text-sm font-medium hover:bg-zinc-50"
       >

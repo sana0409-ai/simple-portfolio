@@ -9,21 +9,27 @@ export default function WorkPage() {
       <article className="mt-8 rounded-xl bg-white/40 backdrop-blur p-6 shadow">
         <header className="flex items-baseline justify-between gap-4">
           <div>
-            <h2 className="text-xl font-semibold">Verity Advisors</h2>
-            <p className="text-sm text-zinc-700">AI Research Intern</p>
+            <h2 className="text-xl font-semibold">Uplifty AI</h2>
+            <p className="text-sm text-zinc-700">AI Intern</p>
           </div>
           <span className="text-sm text-zinc-600 whitespace-nowrap">
-            Mar 2025 – May 2025
+            Oct 2025 – Present
           </span>
         </header>
 
         <p className="mt-4 text-sm leading-6 text-zinc-800">
-          Contributed to applied research in AI/ML for quantitative finance. Designed and shipped
-          end-to-end ML pipelines in Python using XGBoost,{" "}
-          <strong>LSTM</strong>, and <strong>PyTorch</strong>; operationalized models with{" "}
-          <strong>MLflow</strong>, <strong>GitHub Actions</strong>, <strong>Docker</strong>, and{" "}
-          <strong>AWS</strong>. Worked with real-time APIs (IBKR, Unusual Whales), applied
-          risk-aware evaluation, model calibration, and ensembles to improve reliability.
+          Designed and piloted a <strong>Personal AI Agent (PAI)</strong> using supervised
+          learning and feedback-driven loops to deliver context-aware, goal-driven
+          recommendations, improving personalization during early product rollouts.
+          Built and deployed <strong>LLM-based</strong> suggestion and wellness
+          classification models, leveraging <strong>RAG</strong> with
+          <strong> LangChain</strong> and <strong>Pinecone</strong> to ground responses in
+          internal knowledge and user context, improving relevance and reducing
+          hallucinations. Developed the <strong>Human Growth Index (HGI)</strong> by
+          transforming multi-source user data into <strong>13 explainable wellness
+          dimensions</strong>, while owning end-to-end ML deployment pipelines using
+          <strong> Docker</strong> and <strong>Cloud Run</strong> to support scalable
+          pilot deployments.
         </p>
       </article>
 
