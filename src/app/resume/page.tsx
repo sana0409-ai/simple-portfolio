@@ -5,17 +5,22 @@ export default function ResumePage() {
 
       <div className="rounded-xl border shadow-sm overflow-hidden bg-white">
         <object
-          data="/resume.pdf#toolbar=1&navpanes=0&scrollbar=1"
+          data="/Sana_cv.pdf#toolbar=1&navpanes=0&scrollbar=1"
           type="application/pdf"
           className="w-full h-[80vh]"
         >
           <div className="p-6 text-sm">
             Your browser can’t display PDFs inline.{" "}
-            <a className="underline" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a
+              className="underline"
+              href="/Sana_cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Open the resume
             </a>{" "}
             or{" "}
-            <a className="underline" href="/resume.pdf" download>
+            <a className="underline" href="/Sana_cv.pdf" download>
               download it
             </a>.
           </div>
