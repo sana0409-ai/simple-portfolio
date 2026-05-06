@@ -13,25 +13,24 @@ export default function Home() {
           {/* Remove nowrap so it can wrap neatly */}
           <h2 className="text-left text-3xl md:text-4xl font-extrabold leading-[1.1]">
             <span className="bg-gradient-to-r from-blue-600 via-indigo-500 to-fuchsia-600 bg-clip-text text-transparent">
-              Designing AI systems with measurable impact.
+              Designing production-grade GenAI &amp; ML systems.
             </span>
           </h2>
 
           <p className="text-zinc-700">
-            I’m an <strong>AI/ML Engineer</strong> with <strong>3+ years of experience</strong>,
-            focused on building production-ready <strong>machine learning</strong> and
-            <strong> generative AI</strong> systems. I enjoy turning complex data into
-            scalable APIs, intelligent models, and real-world solutions.
+            I&#39;m a Senior ML Engineer and GenAI Specialist with 7+ years of experience building production-grade machine learning and generative AI systems across startups and enterprise environments.
             <br />
             <br />
-            My work spans designing end-to-end ML pipelines from data cleaning and feature
-            engineering to model training, deployment, and monitoring. I’ve built
-            <strong> fraud detection systems</strong>, <strong>real-time forecasting pipelines</strong>,
-            <strong> conversational AI assistants</strong>, and <strong>RAG-based applications</strong>,
-            deploying them using <strong>FastAPI</strong>, <strong>Docker</strong>, and
-            cloud platforms. I enjoy building systems that are <strong>explainable</strong>,
-            <strong> reliable</strong>, and actually used by end users. I’m also comfortable
-            translating technical work into clear insights and dashboards for stakeholders.
+            My work spans the full ML lifecycle from exploratory data analysis and feature engineering to model training, fine-tuning, deployment, and monitoring. I&#39;ve shipped engagement prediction engines, real-time trading ML systems, LLM-powered RAG applications, multi-agent orchestration pipelines, and large-scale time-series forecasting models deploying them on GCP, AWS, and Azure using FastAPI, Docker, Kubernetes, and modern MLOps tooling.
+            <br />
+            <br />
+            I specialize in the space where generative AI meets production reality: fine-tuning LLMs (Llama, BERTweet) with qLoRA, building Graph RAG systems with knowledge graph retrieval, and designing agentic frameworks using LangGraph and LangChain that actually work reliably under real traffic.
+            <br />
+            <br />
+            What drives me is building systems that are explainable, scalable, and genuinely used and translating complex model outputs into clear, actionable insights for both technical teams and business stakeholders.
+            <br />
+            <br />
+            I am open to senior ML, GenAI, and data science roles at companies building things that matter.
           </p>
 
           <div>
